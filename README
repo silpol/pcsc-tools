@@ -1,7 +1,7 @@
 Some tools to be used with smart cards and PC/SC
 ================================================
 
-This archive contains some tools usefull for a PC/SC user.
+This archive contains some tools useful for a PC/SC user.
 PC/SC lite [1] from MUSCLE [2].
 
 The tools provided are:
@@ -91,9 +91,9 @@ The tools provided are:
 You will need the package pcsc-perl [3] to be able to use scriptor and
 gscriptor.
 
-[1] http://pcsclite.alioth.debian.org/
-[2] http://linuxnet.com/
-[3] http://ludovic.rousseau.free.fr/softwares/pcsc-perl/
+[1] https://pcsclite.apdu.fr/
+[2] https://muscle.apdu.fr/
+[3] https://pcsc-perl.apdu.fr/
 
 
 Authors:
@@ -129,6 +129,29 @@ Licences:
 
 History:
 ========
+
+1.7.1 - 30 December 2023, Ludovic ROUSSEAU
+    - 64 new ATRs
+    - configure: Use ATR_analysis by default on GNU/Linux
+    - improve Windows support
+
+1.7.0 - 7 October 2023, Ludovic ROUSSEAU
+    - 182 new ATRs
+    - pcsc_scan:
+      . add debug option -d
+      . add PnP option -p
+    - gscriptor: i18n and l10n in English (default), French and Russian
+    - configure: add --enable-ATRparser=foobar to specify an ATR parser
+    - minor fixes and improvements
+
+1.6.2 - 22 January 2023, Ludovic ROUSSEAU
+    - 18 new ATRs
+    - smartcard_list.txt moved to https://pcsc-tools.apdu.fr/smartcard_list.txt
+
+1.6.1 - 30 December 2022, Ludovic ROUSSEAU
+    - 196 new ATRs
+    - use colors on NetBSD ("wsvt25" terminal)
+    - pcsc_scan: always print the version in verbose mode
 
 1.6.0 - 29 January 2022, Ludovic ROUSSEAU
     - 48 new ATRs
@@ -225,7 +248,7 @@ History:
     - minor fixes
 
 1.4.20 - 16 June 2012, Ludovic ROUSSEAU
-    - Makefile: Add arguments to CFLAGS instead of overwritting them
+    - Makefile: Add arguments to CFLAGS instead of overwriting them
     - 3 new ATRs
 
 1.4.19 - 13 June 2012, Ludovic ROUSSEAU
@@ -285,7 +308,7 @@ History:
 1.4.10 - 10 August 2007, Ludovic ROUSSEAU
     - 25 new ATR
     - scriptor: correctly display the ISO7816 error code even when the
-      line is splitted
+      line is split
     - gscriptor: the line continuation feature was broken
 
 1.4.9 - 1 June 2007, Ludovic ROUSSEAU

@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 #    ATR_analysis
-#    Copyright (C) 2000-2012  Ludovic Rousseau, Christophe Levantis
+#    Copyright (C) 2000-2023  Ludovic Rousseau, Christophe Levantis
 #
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -46,7 +46,7 @@ use Chipcard::PCSC::Card;
 use File::stat;
 
 # default value for XDG_CACHE_HOME
-# http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+# https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
 my $Cache = "$ENV{HOME}/.cache";
 
 # check if XDG_CACHE_HOME env variable is set
@@ -56,7 +56,7 @@ if (exists($ENV{XDG_CACHE_HOME}))
 }
 
 # file containing the smart card models
-my @SMARTCARD_LIST = ( "$Cache/smartcard_list.txt", "$ENV{HOME}/.smartcard_list.txt", "/usr/local/pcsc/smartcard_list.txt", "/usr/share/pcsc/smartcard_list.txt", "/usr/local/share/pcsc/smartcard_list.txt");
+my @SMARTCARD_LIST = ( "$Cache/smartcard_list.txt", "$ENV{HOME}/.smartcard_list.txt", "@pcsc_dir@/smartcard_list.txt");
 
 our ($opt_v, $opt_h);
 my ($atr, %TS, @Fi, @FMax, @Di, @XI, @UI, $T, $value, $counter, $line, $TCK);
@@ -101,7 +101,7 @@ getopts("vh");
 
 if ($opt_v)
 {
-	print "Version: 1.7, (c) 2002-2012, Ludovic Rousseau <ludovic.rousseau\@free.fr>\n";
+	print "Version: 1.8, (c) 2002-2023, Ludovic Rousseau <ludovic.rousseau\@free.fr>\n";
 	print "This software is free software (GNU General Public License)\n";
 	exit;
 }
@@ -249,11 +249,11 @@ sub update_smartcard_list($$)
 
 		if ($^O =~ "darwin")
 		{
-			system("curl $url --output $file");
+			system("curl --silent --show-error --user-agent 'ATR_analysis curl' $url --output $file");
 		}
 		else
 		{
-			system("wget --quiet $url --output-document=$file ; touch $file");
+			system("wget --quiet $url --user-agent='ATR_analysis wget' --output-document=$file ; touch $file");
 		}
 
 		# did an update
@@ -270,7 +270,7 @@ if ($found == 1)
 {
 	# ATR not found
 	my $file = $SMARTCARD_LIST[0];
-	my $url = "http://ludovic.rousseau.free.fr/softwares/pcsc-tools/smartcard_list.txt";
+	my $url = "https://pcsc-tools.apdu.fr/smartcard_list.txt";
 
 	# update the ATR list
 	if (update_smartcard_list($file, $url))
@@ -339,7 +339,7 @@ sub analyse_TA()
 
 		if ($F & 0x1)
 		{
-			print " - implicity defined";
+			print " - implicitly defined";
 		}
 		else
 		{

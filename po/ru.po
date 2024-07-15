@@ -1,0 +1,345 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.6.3\n"
+"Report-Msgid-Bugs-To: https://github.com/LudovicRousseau/pcsc-tools/issues\n"
+"POT-Creation-Date: 2023-04-11 21:56+0200\n"
+"PO-Revision-Date: 2023-04-09 11:56+0300\n"
+"Last-Translator: Aleksandr Proklov <a.proklov@rosalinux.ru>\n"
+"Language-Team: Russian \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../gscriptor:68
+msgid "Wrap lines"
+msgstr "перенос строк"
+
+#: ../gscriptor:69
+msgid "Run"
+msgstr "Старт"
+
+#: ../gscriptor:140
+msgid "Script"
+msgstr "Скрипт"
+
+#: ../gscriptor:141
+msgid "Result"
+msgstr "Результат"
+
+#: ../gscriptor:193
+msgid "_File"
+msgstr "_Файл"
+
+#: ../gscriptor:194
+msgid "_New"
+msgstr "_Новый"
+
+#: ../gscriptor:194
+msgid "Create a new file"
+msgstr "Создать новый файл"
+
+#: ../gscriptor:195
+msgid "_Open"
+msgstr "_Открыть"
+
+#: ../gscriptor:195
+msgid "Open a file"
+msgstr "Открыть файл"
+
+#: ../gscriptor:196
+msgid "_Save"
+msgstr "_Сохранить"
+
+#: ../gscriptor:196
+msgid "Save current file"
+msgstr "Сохранить файл"
+
+#: ../gscriptor:197
+msgid "Save _As..."
+msgstr "Сохранить как..."
+
+#: ../gscriptor:197
+msgid "Save to a file"
+msgstr "Сохранить в файл"
+
+#: ../gscriptor:198
+msgid "_Quit"
+msgstr "_Выход"
+
+#: ../gscriptor:198
+msgid "Quit"
+msgstr "Выйти из программы"
+
+#: ../gscriptor:199
+msgid "R_eader"
+msgstr "Считыватель"
+
+#: ../gscriptor:200
+msgid "_Connect"
+msgstr "_Подключить"
+
+#: ../gscriptor:200
+msgid "Connect to the current Reader"
+msgstr "Подключиться к выбранному считывателю"
+
+#: ../gscriptor:201
+msgid "Reco_nnect"
+msgstr "Переподключить"
+
+#: ../gscriptor:201
+msgid "Reconnect to the current Reader"
+msgstr "Повторное подключение к считывателю"
+
+#: ../gscriptor:202
+msgid "_Disconnect"
+msgstr "_Отключить"
+
+#: ../gscriptor:202
+msgid "Disconnect from the current Reader"
+msgstr "Отключить считыватель"
+
+#: ../gscriptor:203
+msgid "_Status"
+msgstr "_Статус"
+
+#: ../gscriptor:203
+msgid "Display the current Reader's status"
+msgstr "Показать статус подключения к считывателю"
+
+#: ../gscriptor:204
+msgid "Ru_n"
+msgstr "Выполнить"
+
+#: ../gscriptor:205
+msgid "_Run Script"
+msgstr "Выполнить скрипт"
+
+#: ../gscriptor:205
+msgid "Run Script on current Reader"
+msgstr "Выполнить скрипт на выбранном считывателе"
+
+#: ../gscriptor:206
+msgid "C_lear Results"
+msgstr "Очистить"
+
+#: ../gscriptor:206
+msgid "Clear the Results Area"
+msgstr "Очистить поле результатов"
+
+#: ../gscriptor:207
+msgid "_Settings"
+msgstr "_Настройки"
+
+#: ../gscriptor:208 ../gscriptor:272
+msgid "Reader"
+msgstr "Считыватель"
+
+#: ../gscriptor:208
+msgid "Select the Reader"
+msgstr "Выбрать считыватель"
+
+#: ../gscriptor:209
+msgid "_Help"
+msgstr "_Помощь"
+
+#: ../gscriptor:210
+msgid "_About"
+msgstr "О программе"
+
+#: ../gscriptor:210
+msgid "About"
+msgstr "О программе"
+
+#: ../gscriptor:249
+msgid "welcome to the "
+msgstr "Добро пожаловать в "
+
+#: ../gscriptor:249
+msgid " application! - not connected"
+msgstr " , считыватель - не подключен"
+
+#: ../gscriptor:255
+msgid "Can not open"
+msgstr "Не могу открыть"
+
+#: ../gscriptor:274
+msgid "Protocol"
+msgstr "Протокол"
+
+#: ../gscriptor:349
+msgid "New configuration !"
+msgstr "Новая конфигурация !"
+
+#: ../gscriptor:354
+msgid "Preserving old configuration"
+msgstr "Сохранение старой конфигурации"
+
+#: ../gscriptor:431 ../gscriptor:495
+msgid ""
+"The current work will be lost!\n"
+"Are you sure you want to continue?"
+msgstr ""
+"Существующие результаты будут утеряны!\n"
+"Желаете продолжить?"
+
+#: ../gscriptor:452 ../gscriptor:475
+msgid "Successfully saved script to"
+msgstr "Скрипт сохранен в"
+
+#: ../gscriptor:456 ../gscriptor:470 ../gscriptor:479 ../gscriptor:514
+#: ../gscriptor:519
+msgid "Can't open"
+msgstr "Не могу открыть"
+
+#: ../gscriptor:531
+msgid "Action Cancelled..."
+msgstr "Действие отменено..."
+
+#: ../gscriptor:605
+msgid ""
+"The card is already connected...\n"
+"Do you want to reconnect?"
+msgstr ""
+"Смарт-карта уже подключена...\n"
+"Желаете переподключить?"
+
+#: ../gscriptor:615 ../gscriptor:633
+msgid "Connected to"
+msgstr "подключен к"
+
+#: ../gscriptor:617
+msgid "Can not connect to the reader named"
+msgstr "Не удается подключиться к считывателю"
+
+#: ../gscriptor:623
+msgid ""
+"No default reader has been configured.\n"
+"Please make sure you have configured a reader first."
+msgstr ""
+"Считыватель по-умолчанию не был настроен.\n"
+"Убедитесь что выполнена настройка считывателя."
+
+#: ../gscriptor:635
+msgid "Can not reconnect to the reader named"
+msgstr "Не удается переподключиться к считывателю"
+
+#: ../gscriptor:647
+msgid ""
+"The Chipcard::PCSC:Card object is not connected...\n"
+" Do you want to connect?"
+msgstr ""
+"Chipcard::PCSC:Card не подключена...\n"
+"Желаете подключить?"
+
+#: ../gscriptor:661
+msgid "Can not disconnect from the reader named"
+msgstr "Не удается отключить считыватель"
+
+#: ../gscriptor:665
+msgid "not connected"
+msgstr "не подключен"
+
+#: ../gscriptor:668
+msgid "The Chipcard::PCSC::Card object is not connected!"
+msgstr "Chipcard::PCSC::Card не подключен!"
+
+#: ../gscriptor:733
+msgid "Can not retrieve reader status:\n"
+msgstr "Не удается получить статус считывателя:\n"
+
+#: ../gscriptor:743
+msgid ""
+"The reader is not connected...\n"
+" Do you want to connect?"
+msgstr ""
+"Считыватель не подключен...\n"
+"Желаете подключить?"
+
+#: ../gscriptor:765
+msgid ""
+"Beginning script execution...\n"
+"\n"
+msgstr ""
+"Начинается выполнение скрипта...\n"
+"\n"
+
+#: ../gscriptor:812
+msgid "Sending: "
+msgstr "Отправлено: "
+
+#: ../gscriptor:818
+msgid "Received: "
+msgstr "Получено: "
+
+#: ../gscriptor:822
+msgid "Transmit failed:"
+msgstr "Передача не удалась:"
+
+#: ../gscriptor:822
+msgid "Stopping script execution"
+msgstr "Остановка выполнения скрипта"
+
+#: ../gscriptor:825
+msgid ""
+"\n"
+"Errors During Script Execution:"
+msgstr ""
+"\n"
+"Ошибки в ходе выполнения скрипта:"
+
+#: ../gscriptor:829
+msgid "Script was executed without error...\n"
+msgstr "Скрипт выполнен без ошибок...\n"
+
+#: ../gscriptor:836
+msgid ""
+"The Chipcard::PCSC::Card object is not connected!\n"
+"Do you want to connect?"
+msgstr ""
+"Chipcard::PCSC::Card не подключен!\n"
+"Желаете подключить?"
+
+#: ../scriptor:47
+msgid "Usage:"
+msgstr "Использование:"
+
+#: ../scriptor:47
+msgid "[-h] [-r reader] [-p protocol] [-u] [file]\n"
+msgstr ""
+
+#: ../scriptor:48
+msgid "          -h: this help\n"
+msgstr "          -h: справка\n"
+
+#: ../scriptor:49
+msgid "   -r reader: specify to use the PCSC smart card reader named reader\n"
+msgstr "   -r reader: указать имя используемого считывателя смарт-карт\n"
+
+#: ../scriptor:50
+msgid "              By defaults the first one found is used so you\n"
+msgstr "              по-умолчанию используется первый из найденых\n"
+
+#: ../scriptor:51
+msgid "              don't have to specify anything if you just have\n"
+msgstr "              не требуется задавать это значение, если у вас\n"
+
+#: ../scriptor:52
+msgid "              one reader\n"
+msgstr "              только один считываытель\n"
+
+#: ../scriptor:53
+msgid " -p protocol: protocol to use among T=0 and T=1.\n"
+msgstr " -p protocol: протокол используемый между T=0 и T=1.\n"
+
+#: ../scriptor:54
+msgid "              Default is to let pcsc-lite choose the protocol\n"
+msgstr "              По-умолчанию pcsc-lite сам выбирает нужный протокол\n"
+
+#: ../scriptor:55
+msgid "          -u: use unbuffered stdout\n"
+msgstr "          -u: ипользовать небуферизированный stdout\n"
+
+#: ../scriptor:56
+msgid "        file: file containing APDUs\n"
+msgstr "        file: файл содержащий APDUs\n"
